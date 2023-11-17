@@ -13,7 +13,7 @@ import java.util.List;
 
 public class AsignacionCuarteles extends javax.swing.JInternalFrame {
 
-    private Cuartel cuartelMasCercano = new Cuartel(); //pal metodo
+    private Cuartel cuartelMasCercano = new Cuartel(); 
     
     private CuartelData cd = new CuartelData();
     private Cuartel cuartel;
@@ -141,11 +141,11 @@ public class AsignacionCuarteles extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-//funca!!
+
     private void JCBSiniestroItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_JCBSiniestroItemStateChanged
     }//GEN-LAST:event_JCBSiniestroItemStateChanged
 
-//funca!! - Salir
+
     private void JBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_JBSalirActionPerformed
@@ -183,14 +183,6 @@ public class AsignacionCuarteles extends javax.swing.JInternalFrame {
     }
     
     public void designarCuartel() {
-
-        
-        //para que funque..
-        
-// El cuartel debe estar en estado 1.
-//La brigada debe estar disponible o sea en 1 .
-//La especialidad de la brigada debe ser igual al tipo de siniestro
-//id_brigada de siniestro debe estar en null 
 
 
         Double distancia1 = null;
