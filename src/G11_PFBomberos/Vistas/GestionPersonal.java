@@ -1,16 +1,18 @@
-package bomberosApp.Vistas;
+package G11_PFBomberos.Vistas;
 
-import bomberosApp.AccesoADatos.BomberoData;
-import bomberosApp.AccesoADatos.BrigadaData;
-import bomberosApp.Entidades.Bombero;
-import bomberosApp.Entidades.Brigada;
+
+import G11_PFBomberos.AccesoADatos.BomberoData;
+import G11_PFBomberos.AccesoADatos.BrigadaData;
+import G11_PFBomberos.Entidades.Bombero;
+import G11_PFBomberos.Entidades.Brigada;
+
 import java.awt.Color;
 import java.time.ZoneId;
 import java.util.Date;
 import java.util.List;
 import javax.swing.JOptionPane;
 
-public class GestionDePersonalView extends javax.swing.JInternalFrame {
+public class GestionPersonal extends javax.swing.JInternalFrame {
 
     private BrigadaData brigadaData = new BrigadaData();
     private List<Brigada> listarBrigada = brigadaData.ListarBrigada();
@@ -19,7 +21,7 @@ public class GestionDePersonalView extends javax.swing.JInternalFrame {
     private BomberoData bomberoData = new BomberoData();
     private List<Bombero> listarBomberos = bomberoData.ListarBomberos();
 
-    public GestionDePersonalView() {
+    public GestionPersonal() {
         initComponents();
         CargarComboBox();
         cambiarColor();

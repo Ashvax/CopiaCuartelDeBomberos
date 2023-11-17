@@ -1,16 +1,19 @@
-package bomberosApp.Vistas;
+package G11_PFBomberos.Vistas;
 
-import bomberosApp.AccesoADatos.BrigadaData;
-import bomberosApp.AccesoADatos.SiniestroData;
-import bomberosApp.Entidades.Brigada;
-import bomberosApp.Entidades.Siniestro;
+
+import G11_PFBomberos.AccesoADatos.BrigadaData;
+import G11_PFBomberos.AccesoADatos.SiniestroData;
+import G11_PFBomberos.Entidades.Brigada;
+import G11_PFBomberos.Entidades.Siniestro;
+
+
 import java.awt.Color;
 import java.time.ZoneId;
 import java.util.Date;
 import java.util.List;
 import javax.swing.JOptionPane;
 
-public class SiniestrosView extends javax.swing.JInternalFrame {
+public class Siniestros extends javax.swing.JInternalFrame {
 
     private SiniestroData sd = new SiniestroData();
     private Siniestro siniestro;
@@ -20,7 +23,7 @@ public class SiniestrosView extends javax.swing.JInternalFrame {
     private BrigadaData brigadaData = new BrigadaData();
     private List<Brigada> listarBrigada = brigadaData.ListarBrigada();
 
-    public SiniestrosView() {
+    public Siniestros() {
         initComponents();
         llenarComboBox();
         siniestro = new Siniestro();
@@ -96,7 +99,7 @@ public class SiniestrosView extends javax.swing.JInternalFrame {
         jScrollPane1.setViewportView(JTDetallesDelSiniestro);
 
         JBBuscar.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBBuscar.jpg"))); // NOI18N
+        JBBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBBuscar.jpg"))); // NOI18N
         JBBuscar.setText("Buscar");
         JBBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,7 +108,7 @@ public class SiniestrosView extends javax.swing.JInternalFrame {
         });
 
         JBSalir.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBSalir.png.jpg"))); // NOI18N
+        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBSalir.png.jpg"))); // NOI18N
         JBSalir.setText("Salir");
         JBSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,7 +117,7 @@ public class SiniestrosView extends javax.swing.JInternalFrame {
         });
 
         JBModificar.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBModificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/editar.jpg"))); // NOI18N
+        JBModificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/editar.jpg"))); // NOI18N
         JBModificar.setText("Modificar");
         JBModificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,7 +126,7 @@ public class SiniestrosView extends javax.swing.JInternalFrame {
         });
 
         JBGuardarNuevoSiniestro.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBGuardarNuevoSiniestro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBGuardar.jpg"))); // NOI18N
+        JBGuardarNuevoSiniestro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBGuardar.jpg"))); // NOI18N
         JBGuardarNuevoSiniestro.setText("Guardar Siniestro Nuevo");
         JBGuardarNuevoSiniestro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -186,13 +189,6 @@ public class SiniestrosView extends javax.swing.JInternalFrame {
                         .addGap(139, 139, 139)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(156, 156, 156)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JTCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JBBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(36, 36, 36)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(JRBEstado)
@@ -216,7 +212,15 @@ public class SiniestrosView extends javax.swing.JInternalFrame {
                                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jCBoxTipoSiniestro, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(156, 156, 156)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JTCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(JBBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -273,7 +277,7 @@ public class SiniestrosView extends javax.swing.JInternalFrame {
                     .addComponent(JBSalir)
                     .addComponent(JBModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JBGuardarNuevoSiniestro))
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         pack();

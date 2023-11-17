@@ -1,24 +1,25 @@
-package bomberosApp.Vistas;
-
-import bomberosApp.AccesoADatos.BomberoData;
-import bomberosApp.AccesoADatos.BrigadaData;
-import bomberosApp.AccesoADatos.CuartelData;
-import bomberosApp.AccesoADatos.SiniestroData;
+package G11_PFBomberos.Vistas;
 
 
+
+
+import G11_PFBomberos.AccesoADatos.BomberoData;
+import G11_PFBomberos.AccesoADatos.BrigadaData;
+import G11_PFBomberos.AccesoADatos.CuartelData;
+import G11_PFBomberos.AccesoADatos.SiniestroData;
 import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 
-public class disenioGestionBomberosApp extends javax.swing.JFrame {
+public class MainGestionBomberos extends javax.swing.JFrame {
 
     private final BomberoData bd;
     private final CuartelData cd;
     private final BrigadaData brigd;
     private final SiniestroData sd;
 
-    public disenioGestionBomberosApp() {
+    public MainGestionBomberos() {
         initComponents();
         setTitle("Sistema De Bomberos - ULP Tec Desarrollo De Software");
 
@@ -54,7 +55,7 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        fondito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/fondo (1).jpg"))); // NOI18N
+        fondito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/fondo (1).jpg"))); // NOI18N
 
         escritorio.setLayer(fondito, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -66,13 +67,13 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(fondito, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 802, Short.MAX_VALUE)
+            .addComponent(fondito, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        JMUnidades.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/camion-de-bomberos.jpg"))); // NOI18N
+        JMUnidades.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/camion-de-bomberos.jpg"))); // NOI18N
         JMUnidades.setText("Unidades");
 
-        JMICargaDePersonal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/bombero.jpg"))); // NOI18N
+        JMICargaDePersonal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/bombero.jpg"))); // NOI18N
         JMICargaDePersonal.setText("Carga De Personal");
         JMICargaDePersonal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,7 +152,7 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
 
         jMenuBar1.add(JMSiniestros);
 
-        JMSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBSalir.png.jpg"))); // NOI18N
+        JMSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBSalir.png.jpg"))); // NOI18N
         JMSalir.setText("Salir");
         JMSalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -180,7 +181,7 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
         escritorio.removeAll();
         escritorio.repaint();
         cambiarfondo();
-        SiniestrosView sv = new SiniestrosView();
+        Siniestros sv = new Siniestros();
         sv.setVisible(true);
         escritorio.add(sv);
         escritorio.moveToFront(sv);
@@ -191,7 +192,7 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
         escritorio.removeAll();
         escritorio.repaint();
         cambiarfondo();
-        BusquedaYModificacionDeBrigadasView mybdbv = new BusquedaYModificacionDeBrigadasView();
+        BusquedaYModificacionBrigadas mybdbv = new BusquedaYModificacionBrigadas();
         mybdbv.setVisible(true);
         escritorio.add(mybdbv);
         escritorio.moveToFront(mybdbv);
@@ -201,7 +202,7 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
         escritorio.removeAll();
         escritorio.repaint();
         cambiarfondo();
-        HistorialDeEventosView hdsv = new HistorialDeEventosView();
+        HistorialEventos hdsv = new HistorialEventos();
         hdsv.setVisible(true);
         escritorio.add(hdsv);
         escritorio.moveToFront(hdsv);
@@ -211,7 +212,7 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
         escritorio.removeAll();
         escritorio.repaint();
         cambiarfondo();
-        InformacionDeBrigadasEnCuartelView idcv = new InformacionDeBrigadasEnCuartelView();
+        InformacionBrigadasCuartel idcv = new InformacionBrigadasCuartel();
         idcv.setVisible(true);
         escritorio.add(idcv);
         escritorio.moveToFront(idcv);
@@ -221,7 +222,7 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
         escritorio.removeAll();
         escritorio.repaint();
         cambiarfondo();
-        CargaDePersonalView cdpv = new CargaDePersonalView();
+        CargaPersonal cdpv = new CargaPersonal();
         cdpv.setVisible(true);
         escritorio.add(cdpv);
         escritorio.moveToFront(cdpv);
@@ -231,7 +232,7 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
         escritorio.removeAll();
         escritorio.repaint();
         cambiarfondo();
-        GestionDeCuartelesView gdcv = new GestionDeCuartelesView();
+        GestionCuarteles gdcv = new GestionCuarteles();
         gdcv.setVisible(true);
         escritorio.add(gdcv);
         escritorio.moveToFront(gdcv);
@@ -241,7 +242,7 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
         escritorio.removeAll();
         escritorio.repaint();
         cambiarfondo();
-        RevisarBrigadasView rbv = new RevisarBrigadasView();
+        RevisarBrigadas rbv = new RevisarBrigadas();
         rbv.setVisible(true);
         escritorio.add(rbv);
         escritorio.moveToFront(rbv);
@@ -251,7 +252,7 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
         escritorio.removeAll();
         escritorio.repaint();
         cambiarfondo();
-        PersonalEnBrigadasView pebv = new PersonalEnBrigadasView();
+        PersonalBrigadas pebv = new PersonalBrigadas();
         pebv.setVisible(true);
         escritorio.add(pebv);
         escritorio.moveToFront(pebv);
@@ -276,20 +277,20 @@ public class disenioGestionBomberosApp extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(disenioGestionBomberosApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainGestionBomberos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(disenioGestionBomberosApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainGestionBomberos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(disenioGestionBomberosApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainGestionBomberos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(disenioGestionBomberosApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainGestionBomberos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new disenioGestionBomberosApp().setVisible(true);
+                new MainGestionBomberos().setVisible(true);
             }
         });
     }

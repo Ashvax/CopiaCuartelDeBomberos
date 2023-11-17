@@ -1,7 +1,8 @@
-package bomberosApp.AccesoADatos;
+package G11_PFBomberos.AccesoADatos;
 
-import bomberosApp.Entidades.Bombero;
-import bomberosApp.Entidades.Brigada;
+
+import G11_PFBomberos.Entidades.Bombero;
+import G11_PFBomberos.Entidades.Brigada;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;

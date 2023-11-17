@@ -1,4 +1,4 @@
-package bomberosApp.AccesoADatos;
+package G11_PFBomberos.AccesoADatos;
 
 
 import java.sql.DriverManager;

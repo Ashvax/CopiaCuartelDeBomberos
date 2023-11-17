@@ -1,9 +1,9 @@
-package bomberosApp.Origenes;
+package G11_PFBomberos.Origenes;
 
-import bomberosApp.AccesoADatos.SiniestroData;
-import bomberosApp.Entidades.Bombero;
-import bomberosApp.Entidades.Brigada;
-import bomberosApp.Entidades.Siniestro;
+
+import G11_PFBomberos.AccesoADatos.SiniestroData;
+import G11_PFBomberos.Entidades.Siniestro;
+
 import java.time.LocalDate;
 import java.util.List;
 

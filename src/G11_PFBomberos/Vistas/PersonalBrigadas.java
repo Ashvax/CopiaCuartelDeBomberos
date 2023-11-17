@@ -1,17 +1,18 @@
-package bomberosApp.Vistas;
+package G11_PFBomberos.Vistas;
 
-import bomberosApp.AccesoADatos.BomberoData;
-import bomberosApp.AccesoADatos.BrigadaData;
-import bomberosApp.AccesoADatos.CuartelData;
-import bomberosApp.Entidades.Bombero;
-import bomberosApp.Entidades.Brigada;
-import bomberosApp.Entidades.Cuartel;
+
+import G11_PFBomberos.AccesoADatos.BomberoData;
+import G11_PFBomberos.AccesoADatos.BrigadaData;
+import G11_PFBomberos.AccesoADatos.CuartelData;
+import G11_PFBomberos.Entidades.Bombero;
+import G11_PFBomberos.Entidades.Brigada;
+import G11_PFBomberos.Entidades.Cuartel;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 
-public class PersonalEnBrigadasView extends javax.swing.JInternalFrame {
+public class PersonalBrigadas extends javax.swing.JInternalFrame {
 
     private Brigada brigada = new Brigada();
     private BrigadaData brigadaData = new BrigadaData();
@@ -27,7 +28,7 @@ public class PersonalEnBrigadasView extends javax.swing.JInternalFrame {
 
     private DefaultTableModel modelo = new DefaultTableModel();
 
-    public PersonalEnBrigadasView() {
+    public PersonalBrigadas() {
         initComponents();
         llenarComboBox();
         armarCabeceras();
@@ -59,7 +60,7 @@ public class PersonalEnBrigadasView extends javax.swing.JInternalFrame {
         jLabel3.setText("Elegir la Brigada para ver el personal ");
 
         JBSalir.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBSalir.png.jpg"))); // NOI18N
+        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBSalir.png.jpg"))); // NOI18N
         JBSalir.setText("Salir");
         JBSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,7 +99,9 @@ public class PersonalEnBrigadasView extends javax.swing.JInternalFrame {
                     .addComponent(jLabel3)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 840, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JCBPersonalEnBrigada, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JBSalir, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(363, 363, 363)
+                        .addComponent(JBSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -110,9 +113,9 @@ public class PersonalEnBrigadasView extends javax.swing.JInternalFrame {
                 .addComponent(JCBPersonalEnBrigada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(JBSalir)
-                .addGap(45, 45, 45))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         pack();

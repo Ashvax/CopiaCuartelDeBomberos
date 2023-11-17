@@ -1,15 +1,16 @@
-package bomberosApp.Vistas;
+package G11_PFBomberos.Vistas;
 
-import bomberosApp.AccesoADatos.BomberoData;
-import bomberosApp.AccesoADatos.BrigadaData;
-import bomberosApp.Entidades.Bombero;
-import bomberosApp.Entidades.Brigada;
+
+import G11_PFBomberos.AccesoADatos.BomberoData;
+import G11_PFBomberos.AccesoADatos.BrigadaData;
+import G11_PFBomberos.Entidades.Bombero;
+import G11_PFBomberos.Entidades.Brigada;
 import java.awt.Color;
 import java.time.ZoneId;
 import java.util.List;
 import javax.swing.JOptionPane;
 
-public class CargaDePersonalView extends javax.swing.JInternalFrame {
+public class CargaPersonal extends javax.swing.JInternalFrame {
 
     private BrigadaData brigadaData = new BrigadaData();
     private List<Brigada> listarBrigada = brigadaData.ListarBrigada();
@@ -18,7 +19,7 @@ public class CargaDePersonalView extends javax.swing.JInternalFrame {
     private BomberoData bomberoData = new BomberoData();
     private List<Bombero> listarBomberos = bomberoData.ListarBomberos();
 
-    public CargaDePersonalView() {
+    public CargaPersonal() {
         initComponents();
         CargarComboBox();
         cambiarColor();
@@ -90,7 +91,7 @@ public class CargaDePersonalView extends javax.swing.JInternalFrame {
         });
 
         JBGuardar.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBGuardar.jpg"))); // NOI18N
+        JBGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBGuardar.jpg"))); // NOI18N
         JBGuardar.setText("Guardar");
         JBGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,7 +102,7 @@ public class CargaDePersonalView extends javax.swing.JInternalFrame {
         JCBGrupoSanguineo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" }));
 
         JBSalir.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBSalir.png.jpg"))); // NOI18N
+        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBSalir.png.jpg"))); // NOI18N
         JBSalir.setText("Salir");
         JBSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -203,7 +204,7 @@ public class CargaDePersonalView extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JTFTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JBSalir)
                     .addComponent(JBGuardar))

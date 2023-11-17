@@ -138,7 +138,7 @@
                   <Component id="JTFTelefono" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="49" max="32767" attributes="0"/>
+              <EmptySpace pref="43" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="JBSalir" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="JBGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -235,7 +235,7 @@
           <Font name="Tahoma" size="12" style="3"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/bomberosApp/Imagenes/JBGuardar.jpg"/>
+          <Image iconType="3" name="/G11_PFBomberos/Imagenes/JBGuardar.jpg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Guardar"/>
       </Properties>
@@ -279,7 +279,7 @@
           <Font name="Tahoma" size="12" style="3"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/bomberosApp/Imagenes/JBSalir.png.jpg"/>
+          <Image iconType="3" name="/G11_PFBomberos/Imagenes/JBSalir.png.jpg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Salir"/>
       </Properties>

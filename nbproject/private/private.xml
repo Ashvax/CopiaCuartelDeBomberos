@@ -3,7 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ivo99/OneDrive/Documentos/GitHub/G11_PFBomberos/src/bomberosApp/Vistas/disenioGestionBomberosApp.java</file>
+            <file>file:/C:/Users/ivo99/OneDrive/Documentos/GitHub/G11_PFBomberos/src/G11_PFBomberos/AccesoADatos/CuartelData.java</file>
+            <file>file:/C:/Users/ivo99/OneDrive/Documentos/GitHub/G11_PFBomberos/src/G11_PFBomberos/Vistas/GestionDeCuartelesView.java</file>
+            <file>file:/C:/Users/ivo99/OneDrive/Documentos/GitHub/G11_PFBomberos/src/G11_PFBomberos/Vistas/CargaDePersonalView.java</file>
+            <file>file:/C:/Users/ivo99/OneDrive/Documentos/GitHub/G11_PFBomberos/src/G11_PFBomberos/Vistas/RevisarBrigadasView.java</file>
+            <file>file:/C:/Users/ivo99/OneDrive/Documentos/GitHub/G11_PFBomberos/src/G11_PFBomberos/Vistas/SiniestrosView.java</file>
+            <file>file:/C:/Users/ivo99/OneDrive/Documentos/GitHub/G11_PFBomberos/src/G11_PFBomberos/Vistas/GestionDePersonalView.java</file>
+            <file>file:/C:/Users/ivo99/OneDrive/Documentos/GitHub/G11_PFBomberos/src/G11_PFBomberos/Vistas/HistorialDeEventosView.java</file>
+            <file>file:/C:/Users/ivo99/OneDrive/Documentos/GitHub/G11_PFBomberos/src/G11_PFBomberos/Vistas/disenioGestionBomberosApp.java</file>
+            <file>file:/C:/Users/ivo99/OneDrive/Documentos/GitHub/G11_PFBomberos/src/G11_PFBomberos/Vistas/InformacionDeBrigadasEnCuartelView.java</file>
+            <file>file:/C:/Users/ivo99/OneDrive/Documentos/GitHub/G11_PFBomberos/src/G11_PFBomberos/Vistas/PersonalEnBrigadasView.java</file>
         </group>
     </open-files>
 </project-private>

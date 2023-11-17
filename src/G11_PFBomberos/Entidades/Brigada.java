@@ -1,4 +1,6 @@
-package bomberosApp.Entidades;
+package G11_PFBomberos.Entidades;
+
+import G11_PFBomberos.Entidades.Cuartel;
 
 public class Brigada {
     private int id_brigada;

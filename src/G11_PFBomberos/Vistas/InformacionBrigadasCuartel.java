@@ -1,15 +1,17 @@
-package bomberosApp.Vistas;
+package G11_PFBomberos.Vistas;
 
-import bomberosApp.AccesoADatos.BrigadaData;
-import bomberosApp.AccesoADatos.CuartelData;
-import bomberosApp.Entidades.Brigada;
-import bomberosApp.Entidades.Cuartel;
+
+import G11_PFBomberos.AccesoADatos.BrigadaData;
+import G11_PFBomberos.AccesoADatos.CuartelData;
+import G11_PFBomberos.Entidades.Brigada;
+import G11_PFBomberos.Entidades.Cuartel;
+
 import java.awt.Color;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-public class InformacionDeBrigadasEnCuartelView extends javax.swing.JInternalFrame {
+public class InformacionBrigadasCuartel extends javax.swing.JInternalFrame {
 
     private DefaultTableModel modelo = new DefaultTableModel();
 
@@ -21,7 +23,7 @@ public class InformacionDeBrigadasEnCuartelView extends javax.swing.JInternalFra
     private Brigada brigada = new Brigada();
     private List<Brigada> listarBrigada = brigadaData.ListarBrigada();
 
-    public InformacionDeBrigadasEnCuartelView() {
+    public InformacionBrigadasCuartel() {
         initComponents();
         armarCabeceras();
         cambiarColor();
@@ -44,7 +46,7 @@ public class InformacionDeBrigadasEnCuartelView extends javax.swing.JInternalFra
         setTitle("Informacion de Cuartel");
 
         JBBuscar.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBBuscar.jpg"))); // NOI18N
+        JBBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBBuscar.jpg"))); // NOI18N
         JBBuscar.setText("Buscar");
         JBBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,7 +55,7 @@ public class InformacionDeBrigadasEnCuartelView extends javax.swing.JInternalFra
         });
 
         JBSalir.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBSalir.png.jpg"))); // NOI18N
+        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBSalir.png.jpg"))); // NOI18N
         JBSalir.setText("Salir");
         JBSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,7 +105,7 @@ public class InformacionDeBrigadasEnCuartelView extends javax.swing.JInternalFra
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(JBSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(364, 364, 364))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -113,11 +115,11 @@ public class InformacionDeBrigadasEnCuartelView extends javax.swing.JInternalFra
                     .addComponent(JTFCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
                     .addComponent(JBBuscar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(JBSalir)
-                .addGap(27, 27, 27))
+                .addGap(39, 39, 39))
         );
 
         pack();

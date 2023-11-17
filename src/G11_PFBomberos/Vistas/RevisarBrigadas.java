@@ -1,20 +1,23 @@
-package bomberosApp.Vistas;
+package G11_PFBomberos.Vistas;
 
-import bomberosApp.AccesoADatos.BrigadaData;
-import bomberosApp.Entidades.Brigada;
+
+import G11_PFBomberos.AccesoADatos.BrigadaData;
+import G11_PFBomberos.Entidades.Brigada;
 import java.awt.Color;
+import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.ButtonGroup;
 import javax.swing.table.DefaultTableModel;
 
-public class RevisarBrigadasView extends javax.swing.JInternalFrame {
+public class RevisarBrigadas extends javax.swing.JInternalFrame {
 
     private Brigada brigada = new Brigada();
     private BrigadaData brigadaD = new BrigadaData();
     private List<Brigada> listarDispo = brigadaD.ObtenerBrigadasDisponibles();
     private List<Brigada> listarNODispo = brigadaD.ObtenerBrigadasNODisponibles();
 
-    public RevisarBrigadasView() {
+    public RevisarBrigadas() {
         initComponents();
         armarCabeceras();
         unirBotones();
@@ -41,7 +44,7 @@ public class RevisarBrigadasView extends javax.swing.JInternalFrame {
         setTitle("Revisar Brigadas");
 
         JBSalir.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBSalir.png.jpg"))); // NOI18N
+        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBSalir.png.jpg"))); // NOI18N
         JBSalir.setText("Salir");
         JBSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,13 +98,14 @@ public class RevisarBrigadasView extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(JBSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel1)
-                        .addComponent(JRBBrigadasNODisponibles)
-                        .addComponent(JRBBrigadasDisponibles)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 719, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(JRBBrigadasNODisponibles)
+                    .addComponent(JRBBrigadasDisponibles)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 719, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(JBSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(246, 246, 246)))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -115,9 +119,9 @@ public class RevisarBrigadasView extends javax.swing.JInternalFrame {
                 .addComponent(JRBBrigadasNODisponibles)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addComponent(JBSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27))
+                .addGap(24, 24, 24))
         );
 
         pack();

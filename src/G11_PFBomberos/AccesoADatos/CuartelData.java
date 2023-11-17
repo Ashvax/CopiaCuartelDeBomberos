@@ -1,6 +1,6 @@
-package bomberosApp.AccesoADatos;
+package G11_PFBomberos.AccesoADatos;
 
-import bomberosApp.Entidades.Cuartel;
+import G11_PFBomberos.Entidades.Cuartel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

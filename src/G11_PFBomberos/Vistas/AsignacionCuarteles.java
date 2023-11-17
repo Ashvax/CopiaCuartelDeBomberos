@@ -1,15 +1,17 @@
-package bomberosApp.Vistas;
+package G11_PFBomberos.Vistas;
 
-import bomberosApp.AccesoADatos.BrigadaData;
-import bomberosApp.AccesoADatos.CuartelData;
-import bomberosApp.AccesoADatos.SiniestroData;
-import bomberosApp.Entidades.Brigada;
-import bomberosApp.Entidades.Cuartel;
-import bomberosApp.Entidades.Siniestro;
+
+import G11_PFBomberos.AccesoADatos.BrigadaData;
+import G11_PFBomberos.AccesoADatos.CuartelData;
+import G11_PFBomberos.AccesoADatos.SiniestroData;
+import G11_PFBomberos.Entidades.Brigada;
+import G11_PFBomberos.Entidades.Cuartel;
+import G11_PFBomberos.Entidades.Siniestro;
+
 import java.awt.Color;
 import java.util.List;
 
-public class AsignacionDeCuartelesView1 extends javax.swing.JInternalFrame {
+public class AsignacionCuarteles extends javax.swing.JInternalFrame {
 
     private Cuartel cuartelMasCercano = new Cuartel(); //pal metodo
     
@@ -25,7 +27,7 @@ public class AsignacionDeCuartelesView1 extends javax.swing.JInternalFrame {
     private BrigadaData brigadaData = new BrigadaData();
     private List<Brigada> listarBrigada = brigadaData.ListarBrigada();
     
-    public AsignacionDeCuartelesView1() {
+    public AsignacionCuarteles() {
        
         initComponents();
         llenarComboBoxSiniestro();
@@ -51,7 +53,7 @@ public class AsignacionDeCuartelesView1 extends javax.swing.JInternalFrame {
         setTitle("Asignacion de Cuarteles");
 
         JBSalir.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBSalir.png.jpg"))); // NOI18N
+        JBSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBSalir.png.jpg"))); // NOI18N
         JBSalir.setText("Salir");
         JBSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,7 +76,7 @@ public class AsignacionDeCuartelesView1 extends javax.swing.JInternalFrame {
         jLabel7.setText("Elija el Siniestro a Ubicar");
 
         JBAsignarBrigada.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBAsignarBrigada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/asignar.jpg"))); // NOI18N
+        JBAsignarBrigada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/asignar.jpg"))); // NOI18N
         JBAsignarBrigada.setText("Asignar Brigada");
         JBAsignarBrigada.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,9 +99,9 @@ public class AsignacionDeCuartelesView1 extends javax.swing.JInternalFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(JCBSiniestro, javax.swing.GroupLayout.PREFERRED_SIZE, 823, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -107,13 +109,13 @@ public class AsignacionDeCuartelesView1 extends javax.swing.JInternalFrame {
                                 .addComponent(JTFBrigadaAsignada, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 453, Short.MAX_VALUE)
                                 .addComponent(JTFCuartelMASCercano, javax.swing.GroupLayout.Alignment.LEADING))
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(146, 146, 146)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 21, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(JBAsignarBrigada, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(JBSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,7 +132,7 @@ public class AsignacionDeCuartelesView1 extends javax.swing.JInternalFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(JTFBrigadaAsignada, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JBAsignarBrigada, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JBSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))

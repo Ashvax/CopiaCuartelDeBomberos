@@ -1,4 +1,4 @@
-package bomberosApp.Entidades;
+package G11_PFBomberos.Entidades;
 
 import java.time.LocalDate;
 
