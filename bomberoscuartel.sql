@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-11-2023 a las 17:04:34
+-- Tiempo de generación: 17-11-2023 a las 18:05:47
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -79,10 +79,10 @@ INSERT INTO `brigada` (`id_brigada`, `nombre_brigada`, `especialidad`, `estado`,
 (2, 'Brigada Unidad de re', 'Rescate de Montaña', 1, 4, 1, 'Cuartel: Los Bomberi'),
 (3, 'Brigada Beta', 'Prevencion', 1, 4, 1, 'Lo Mejore´'),
 (4, 'Los Salvavidas', 'Incendios', 1, 4, 0, 'Cuartel: Los Bomberi'),
-(5, 'Brigada Alfa', 'Rescate de Montaña', 1, 8, 1, 'Central Suroeste'),
+(5, 'Brigada Alfa', 'Rescate de Accidentes', 1, 8, 1, 'Central Suroeste'),
 (6, 'Brigada Central Sur', 'Rescate de Mascotas', 1, 2, 0, 'Central Sur'),
 (7, 'Brigada Omega', 'Inundacion', 1, 6, 1, 'Cuartel Noreste'),
-(9, 'Brigada Sureste', 'Incendio', 1, 3, 0, 'Cuartel Sureste');
+(9, 'Brigada Sureste', 'Operativos de Prevención', 1, 3, 0, 'Cuartel Sureste');
 
 -- --------------------------------------------------------
 
