@@ -171,6 +171,9 @@
               <Image iconType="3" name="/G11_PFBomberos/Imagenes/fondo (1).jpg"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="MainGestionBomberos_fondito"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>

@@ -247,12 +247,12 @@ public class CargaPersonal extends javax.swing.JInternalFrame {
         this.dispose();
     }//GEN-LAST:event_JBSalirActionPerformed
 
-//validacion nombre
+
     private void JTFNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_JTFNombreKeyTyped
-    char validar = evt.getKeyChar(); // agarra el caracter
-        if (Character.isDigit(validar)) {// verifica si el carácter es es un numero
-            getToolkit().beep();// sonidito xD
-            evt.consume();// consume el evento evitando que el dígito ingresado se muestre en el JTextField
+    char validar = evt.getKeyChar(); 
+        if (Character.isDigit(validar)) {
+            getToolkit().beep();
+            evt.consume();
             JOptionPane.showMessageDialog(rootPane, "Ingrese Solo Letras. ");
         }
     }//GEN-LAST:event_JTFNombreKeyTyped

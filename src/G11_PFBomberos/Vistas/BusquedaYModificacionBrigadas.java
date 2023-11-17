@@ -60,7 +60,7 @@ public class BusquedaYModificacionBrigadas extends javax.swing.JInternalFrame {
         jLabel1.setText("ID Brigada");
 
         JBBuscar.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        JBBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bomberosApp/Imagenes/JBBuscar.jpg"))); // NOI18N
+        JBBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/G11_PFBomberos/Imagenes/JBBuscar.jpg"))); // NOI18N
         JBBuscar.setText("Buscar");
         JBBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -249,11 +249,11 @@ public class BusquedaYModificacionBrigadas extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-//funca
+
     private void JBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_JBSalirActionPerformed
-//funca
+
     private void JBBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBBuscarActionPerformed
 
         try {
@@ -268,7 +268,7 @@ public class BusquedaYModificacionBrigadas extends javax.swing.JInternalFrame {
                 JRBEstado.setSelected(brigadita.isEstado());
                 JRBDisponibilidad.setSelected(brigadita.isDisponibilidad());
                 JTFidCuartel.setText(brigadita.getCuartel().getId_cuartel() + "");
-                // Carga el JComboBox de cuarteles con los cuarteles asociados a la brigada
+                
                 JCBCuarteles.removeAllItems();
                 if (!JTFidCuartel.getText().isEmpty()) {
                     int idCuartel = Integer.parseInt(JTFidCuartel.getText());
@@ -290,7 +290,7 @@ public class BusquedaYModificacionBrigadas extends javax.swing.JInternalFrame {
 
 
     }//GEN-LAST:event_JBBuscarActionPerformed
-//funca
+
     private void JBModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBModificarActionPerformed
 
         try {
@@ -328,7 +328,7 @@ public class BusquedaYModificacionBrigadas extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(this, "No deje campos vacíos " + e.getMessage());
         }
     }//GEN-LAST:event_JBModificarActionPerformed
-//funca-id cuartel
+
     private void JBBuscarPorIDCuartelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBBuscarPorIDCuartelActionPerformed
 
         try {
@@ -349,7 +349,7 @@ public class BusquedaYModificacionBrigadas extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(this, "No deje campos vacíos. " + e.getMessage());
         }
     }//GEN-LAST:event_JBBuscarPorIDCuartelActionPerformed
-//funca
+
     private void JBNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNuevoActionPerformed
 
         try {
@@ -380,12 +380,12 @@ public class BusquedaYModificacionBrigadas extends javax.swing.JInternalFrame {
             limpiar();
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "El ID debe ser un número válido. " + e.getMessage());
-//            e.printStackTrace();
+
 
             limpiar();
         } catch (NullPointerException e) {
             JOptionPane.showMessageDialog(this, "No deje campos vacíos. " + e.getMessage());
-            //e.printStackTrace();
+            
         }
     }//GEN-LAST:event_JBNuevoActionPerformed
 

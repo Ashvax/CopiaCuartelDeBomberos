@@ -154,7 +154,7 @@ public class InformacionBrigadasCuartel extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(this, "Ingrese un número válido para el ID: " + e.getMessage());
         }
     }//GEN-LAST:event_JBBuscarActionPerformed
-//Funca
+
     private void JBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_JBSalirActionPerformed

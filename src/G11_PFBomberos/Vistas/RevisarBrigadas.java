@@ -126,7 +126,7 @@ public class RevisarBrigadas extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-//funca =)
+
     private void JBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_JBSalirActionPerformed
@@ -198,7 +198,5 @@ public class RevisarBrigadas extends javax.swing.JInternalFrame {
         JBSalir.setForeground(new Color(200, 214, 214));
         
    }
-    
-    
-    
+      
 }

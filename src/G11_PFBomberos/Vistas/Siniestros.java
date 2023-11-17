@@ -282,7 +282,7 @@ public class Siniestros extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-//funca
+
     private void JBGuardarNuevoSiniestroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBGuardarNuevoSiniestroActionPerformed
 
         try {
@@ -330,7 +330,7 @@ public class Siniestros extends javax.swing.JInternalFrame {
             e.printStackTrace();
         }
     }//GEN-LAST:event_JBGuardarNuevoSiniestroActionPerformed
-//funca
+
     private void JBModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBModificarActionPerformed
         try {
             siniestro.setId_siniestro(Integer.parseInt(JTCodigo.getText()));
@@ -345,10 +345,10 @@ public class Siniestros extends javax.swing.JInternalFrame {
             if (JDCFechaDeResolucion.getDate() != null) {
                 siniestro.setFecha_resolucion(JDCFechaDeResolucion.getDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate());
             } else {
-                siniestro.setFecha_resolucion(null);  // Permite fecha_resolución como null.
+                siniestro.setFecha_resolucion(null);  
             }
 
-            //VER - PERO FUNCIONA!!!
+            
             Integer calificacion = null;
             Object selectedCalificacion = JCBCalificacion.getSelectedItem();
             if (selectedCalificacion != null) {
@@ -360,17 +360,15 @@ public class Siniestros extends javax.swing.JInternalFrame {
                         try {
                             calificacion = Integer.parseInt(calificacionStr);
                         } catch (NumberFormatException ex) {
-                            // Manejar la conversión fallida, por ejemplo, mostrando un mensaje de error.
+                            
                             JOptionPane.showMessageDialog(this, "Calificación no válida");
                         }
                     }
                 }
             }
 
-// Verificar si calificacion es nulo y asignar un valor predeterminado si es necesario
             if (calificacion == null) {
-                calificacion = 0; // O cualquier otro valor predeterminado que desees
-            }
+                calificacion = 0;}
 
             siniestro.setCalificacion(calificacion);
             if (siniestro.getFecha_resolucion() == null) {
@@ -383,7 +381,7 @@ public class Siniestros extends javax.swing.JInternalFrame {
             if (JRBBrigadaNull.isSelected()) {
                 siniestro.setBrigada(null);
             } else {
-                // Obtiene la brigada seleccionada del JComboBox
+                
                 Brigada brigadaSELECT = (Brigada) JCBAsignarBrigada.getSelectedItem();
                 siniestro.setBrigada(brigadaSELECT);
             }
@@ -392,25 +390,25 @@ public class Siniestros extends javax.swing.JInternalFrame {
             limpiar();
         } catch (NullPointerException ex) {
             JOptionPane.showMessageDialog(this, "No deje campos vacíos" + ex.getMessage());
-//            ex.printStackTrace();
+
             limpiar();
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(this, "El campo debe ser un número");
-//            ex.printStackTrace();
+
             limpiar();
         }
     }//GEN-LAST:event_JBModificarActionPerformed
-//funca
+
     private void JBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_JBSalirActionPerformed
-//FUNCA!!!!!!!!
+
     private void JBBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBBuscarActionPerformed
 
         try {
             Siniestro sini = null;
             int id = Integer.parseInt(JTCodigo.getText());
-            sini = sd.BuscarSiniestroPorID(id);//LA SOLUCION ERA USAR EL METODO NUEVO DE ID
+            sini = sd.BuscarSiniestroPorID(id);
 
             if (sini != null) {
                 JTFCoordX.setText(String.valueOf(sini.getCoord_X()));

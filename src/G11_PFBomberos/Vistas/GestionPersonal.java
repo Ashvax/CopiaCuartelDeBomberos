@@ -262,7 +262,7 @@ public class GestionPersonal extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-//Funca!!!!
+
     private void JBGuardarModificacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBGuardarModificacionesActionPerformed
 
         try {
@@ -291,11 +291,11 @@ public class GestionPersonal extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(this, "No deje campos vacíos " + e.getMessage());
         }
     }//GEN-LAST:event_JBGuardarModificacionesActionPerformed
-//Funca!!!!
+
     private void JBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_JBSalirActionPerformed
-//Funca!!!!
+
     private void JBBuscarPorDniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBBuscarPorDniActionPerformed
 
         try {
@@ -322,7 +322,7 @@ public class GestionPersonal extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(this, "Ingrese números sin puntos ni comas " + e.getMessage());
         }
     }//GEN-LAST:event_JBBuscarPorDniActionPerformed
-//Funca!!!!
+
     private void JBBuscarPorIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBBuscarPorIDActionPerformed
 
         try {
@@ -347,7 +347,7 @@ public class GestionPersonal extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(this, "Ingrese un número válido para el ID: " + e.getMessage());
         }
     }//GEN-LAST:event_JBBuscarPorIDActionPerformed
-//validacion nombre
+
     private void JTFNombresKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_JTFNombresKeyTyped
         char validar = evt.getKeyChar();
         if (Character.isDigit(validar)) {
@@ -356,7 +356,6 @@ public class GestionPersonal extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(rootPane, "Ingrese Solo Letras. ");
         }
     }//GEN-LAST:event_JTFNombresKeyTyped
-//validacion apellido
     private void JTFApellidosKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_JTFApellidosKeyTyped
         char validar = evt.getKeyChar();
         if (Character.isDigit(validar)) {

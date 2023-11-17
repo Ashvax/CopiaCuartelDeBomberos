@@ -264,11 +264,7 @@ public class MainGestionBomberos extends javax.swing.JFrame {
     }//GEN-LAST:event_JMSalirMouseClicked
 
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -287,7 +283,7 @@ public class MainGestionBomberos extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MainGestionBomberos().setVisible(true);
@@ -317,7 +313,7 @@ public class MainGestionBomberos extends javax.swing.JFrame {
     private void cambiarColor() {
 
         escritorio.setBackground(new Color(40, 42, 54 ));
-//                                  87, 35, 100            188, 146, 248             40, 42, 54           78, 73, 102
+                                
     }
     
     private void cambiarfondo(){

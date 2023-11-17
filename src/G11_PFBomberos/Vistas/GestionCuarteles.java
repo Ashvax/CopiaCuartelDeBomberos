@@ -220,7 +220,7 @@ public class GestionCuarteles extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-//Funcaaa!!!
+
     private void JBBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBBuscarActionPerformed
 
         try {
@@ -230,7 +230,7 @@ public class GestionCuarteles extends javax.swing.JInternalFrame {
             if (cuartelito != null) {
                 JTFNombre.setText(cuartelito.getNombre_cuartel());
                 JTFDireccion.setText(cuartelito.getDireccion());
-                JTFCoordX.setText(String.valueOf(cuartelito.getCoord_X()));//convierte los valores en cadenas.
+                JTFCoordX.setText(String.valueOf(cuartelito.getCoord_X()));
                 JTFCoordY.setText(String.valueOf(cuartelito.getCoord_Y()));
                 JTFTelefono.setText(cuartelito.getTelefono());
                 JTFCorreo.setText(cuartelito.getCorreo());
@@ -244,13 +244,13 @@ public class GestionCuarteles extends javax.swing.JInternalFrame {
         }
 
     }//GEN-LAST:event_JBBuscarActionPerformed
-//Funca!!!
+
     private void JBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_JBSalirActionPerformed
-//Funca!!!
+
     private void JBGuardarModificacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBGuardarModificacionesActionPerformed
-//como hacer para que una cadena solo contenga dígitos numéricos??? - es necesario cambiar el tipod el Atributo??
+
         try {
             cuartel.setId_cuartel(Integer.parseInt(JTFCodigo.getText()));
             cuartel.setNombre_cuartel(JTFNombre.getText());
@@ -276,15 +276,14 @@ public class GestionCuarteles extends javax.swing.JInternalFrame {
         }
 
     }//GEN-LAST:event_JBGuardarModificacionesActionPerformed
-//Funca!!!
+
     private void JBAgregarCuartelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBAgregarCuartelActionPerformed
 
         try {
             cuartel.setNombre_cuartel(JTFNombre.getText());
             cuartel.setDireccion(JTFDireccion.getText());
-            cuartel.setCoord_X(Double.parseDouble(JTFCoordX.getText())); //---
-            cuartel.setCoord_Y(Double.parseDouble(JTFCoordY.getText())); //----
-            cuartel.setTelefono(JTFTelefono.getText());
+            cuartel.setCoord_X(Double.parseDouble(JTFCoordX.getText())); 
+            cuartel.setCoord_Y(Double.parseDouble(JTFCoordY.getText()));
             cuartel.setCorreo(JTFCorreo.getText());
             cuartel.setTelefono(JTFTelefono.getText());
 
@@ -307,7 +306,7 @@ public class GestionCuarteles extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_JBAgregarCuartelActionPerformed
 
     private void JRBEstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JRBEstadoActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_JRBEstadoActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

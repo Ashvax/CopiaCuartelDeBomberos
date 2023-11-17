@@ -137,9 +137,9 @@ public class HistorialEventos extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void JBListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBListarActionPerformed
-// Obtén la fecha actual
+
         LocalDate fechaActual = LocalDate.now();
-// Calcula la fecha del día anterior
+
         LocalDate fechaAyer = fechaActual.minusDays(1);
         try {
             if (JRBEventosDeAyer.isSelected()) {
@@ -198,7 +198,7 @@ public class HistorialEventos extends javax.swing.JInternalFrame {
         }
 
     }//GEN-LAST:event_JBListarActionPerformed
-//funca
+
     private void JBSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_JBSalirActionPerformed
